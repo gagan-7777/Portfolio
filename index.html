@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Personal Portfolio</title>
+    <script src="https://kit.fontawesome.com/1fc9cbfe68.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav> <img src="gaganlogo.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class=" fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class=" fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Gagan</span><br> from Bangalore</h1>
+            </div>
+        </div>
+    </div>
+
+<!-- About Section  -->
+
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="gaganabout.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello everyone ,I'm Gagan a full stack web developer who has great skills in html,css,javascript, i can also ensure that the website performs correctly and can focus on databases, back-end logic, application programming interface (APIs), architecture, and servers.!
+               </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                        <li><span>Web Development</span><br>Designing Websites</li>
+                        <li><span>Backend Developer</span><br>Focus on Databases,Backend-logic</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023-current</span> <br> Training from Colt-Steele Bootcamp</li>
+                        <li><span>2023</span> <br>No Experience</li>
+                        <li><span>2023</span> <br>Internships Done</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span> <br> Training from Colt-Steele Bootcamp</li>
+                        <li><span>2023</span> <br>B-tech from Srinivas University Mangalore</li>
+                        <li><span>2020</span> <br>PUC from MES VIdhyasagar Bangalore</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development rather than software development.</p>
+                <a href="">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX</h2>
+                <p>The screens, buttons, toggles, icons, and other visual elements that you interact with when using a website, app, or other electronic device.</p>
+                <a href="">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Backend</h2>
+                <p>Backend web architecture allows website designers to have more control over their environment by allowing a program's logic to operate with the user having to see every detail of the code</p>
+                <a href="">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--  services section -->
+
+
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png" alt="">
+                <div class="layer">
+                    <h3>Backend</h3>
+                    <p>Ensure the website performs correctly, focusing on databases, back-end logic, application programming interface  </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png" alt="">
+                <div class="layer">
+                    <h3>Application</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from the appstore  </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png" alt="">
+                <div class="layer">
+                    <h3>Websites</h3>
+                    <p>An online shopping website similar to flipkart and amazon </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+
+<!-- contact section -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p> <i class="fa-solid fa-paper-plane"></i> contact@gaganvishumalathi@gmail.com</p>
+            <p>  <i class="fa-solid fa-square-phone"></i> +91-7899008932</p>
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/gagan__7777_/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/gagan-v-871915243/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a class="btn btn2" href="my-cv.pdf" >Watch my CV</a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2"> Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+         </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Gagan <i class="fa-solid fa-hand-holding-heart"></i></p>
+    </div>
+</div>
+
+<script src="app.js"></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxovVB6WcHB-nB3ZUtBC9oaLyxNrsCOD83EjzkngolbzxbBHYwRiqIn-5FBKebOsOUYUg/exec'
+    const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent sucessfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
